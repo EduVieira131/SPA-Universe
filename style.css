@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  font-size: 62.5%;
+
+  --primary-color: #ffffff;
+  --secondary-color: #e1e1e6;
+  --accent-color: #c4c4cc;
+
+  --bg-button: #ffffff;
+  --fc-button: #02799d;
+
+  --ff-body: 'Roboto', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* || GENERAL STYLES*/
+
+body {
+  background: url(./assets/mountains-universe-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-height: 100vh;
+  font-family: var(--ff-body);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.2rem;
+
+  padding: 4rem 7.2rem;
+  margin-bottom: 6.3rem;
+  width: 100%;
+  align-items: center;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: clamp(1.6rem, 1.6rem + 10vw, 2.4rem);
+  line-height: 2.2rem;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+button {
+  background: none;
+  color: var(--primary-color);
+
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+
+  padding: 1.2rem 3.2rem;
+
+  cursor: pointer;
+  transition: background ease 500ms;
+}
+
+button:hover {
+  background-color: var(--bg-button);
+  color: var(--fc-button);
+}
+
+h2,
+p {
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: clamp(1.6rem, 1.6rem + 10vw, 4.8rem);
+  line-height: 125%;
+
+  margin-bottom: 1.6rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+
+  width: min(64.8rem, 90%);
+  margin-inline: auto;
+}
+
+/* || UTILS */
+
+.link-active {
+  color: var(--primary-color);
+}
+
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.8rem;
+
+  width: 100%;
+  height: 100%;
+  margin-top: -5.5rem;
+}
+
+.page-content {
+  height: 80vh;
+  width: 92%;
+  margin-inline: auto;
+}
+
+@media (min-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  main.page-content {
+    margin-inline: auto;
+  }
+
+  div.page-content {
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  div.page-content {
+    margin-left: 10.2rem;
+    width: 90%;
+    height: 90%;
+  }
+
+  h2,
+  p {
+    text-align: left;
+  }
+
+  p {
+    margin: 0;
+  }
+}
