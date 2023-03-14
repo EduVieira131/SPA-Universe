@@ -42,7 +42,7 @@ Landing page desenvolvida para aprender e praticar conceitos de SPA (Single page
 
 ## 🔑 Acesse o projeto!
 
-## [SPAUniverse.io](https://eduvieira131.github.io/SPA-Universe/)
+## [Em andamento](https://eduvieira131.github.io/SPA-Universe/)
 
 ---
 
