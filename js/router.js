@@ -1,4 +1,4 @@
-export default class Router {
+export class Router {
   routes = {}
 
   add(routName, page) {
@@ -14,7 +14,7 @@ export default class Router {
   }
 
   handle() {
-    const { pathname } = window.location
+    const pathname = window.location.pathname
     const route = this.routes[pathname] || this.routes[404]
 
     fetch(route)
@@ -23,6 +23,6 @@ export default class Router {
         document.querySelector('#content').innerHTML = html
       })
   }
-
-  
 }
+
+export default new Router ()

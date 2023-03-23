@@ -85,6 +85,7 @@ button:hover {
 }
 
 h2,
+h3,
 p {
   color: var(--secondary-color);
   text-align: center;
@@ -96,6 +97,12 @@ h2 {
   line-height: 125%;
 
   margin-bottom: 1.6rem;
+}
+
+h3{
+  font-weight: 700;
+  font-size: clamp(1.4rem, 1.4rem + 10vw, 3.2rem);
+  line-height: 125%;
 }
 
 p {
@@ -130,6 +137,12 @@ p {
   height: 80vh;
   width: 92%;
   margin-inline: auto;
+}
+
+@media (max-width: 300px) {
+  p {
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 700px) {
